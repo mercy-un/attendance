@@ -21,7 +21,7 @@ if(isset($_POST['student_login'])){
 ////////////////////---- START TO FETCH STUDENT DETAILS
 if(isset($_SESSION['stureg_id'])){
 	$ddd=mysqli_query($con,"select * from student where id='".$_SESSION['stureg_id']."'");
-	$me=mysqli_fetch_assoc($ddd);
+	$me=mysqli_fetch_assoc($ddd); 
 }
 ///////////////////--- END FETCH STUDENT DETAILS
 
